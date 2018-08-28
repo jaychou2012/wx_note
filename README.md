@@ -9,4 +9,19 @@
 <img src="https://github.com/jaychou2012/wx_note/blob/master/images/Screenshot_20180828-192157.png" width="52%" height="52%"/>
 
 
+<img src="https://github.com/jaychou2012/wx_note/blob/master/images/Screenshot_20180828-192213.png" width="52%" height="52%"/>
+
+
+<img src="https://github.com/jaychou2012/wx_note/blob/master/images/Screenshot_20180828-192224.png" width="52%" height="52%"/>
+
+
+<img src="https://github.com/jaychou2012/wx_note/blob/master/images/Screenshot_20180828-192230.png" width="52%" height="52%"/>
+
+
+<img src="https://github.com/jaychou2012/wx_note/blob/master/images/Screenshot_20180828-192313.png" width="52%" height="52%"/>
+
+
+<img src="https://github.com/jaychou2012/wx_note/blob/master/images/Screenshot_20180828-195834.png" width="52%" height="52%"/>
+
+
 
