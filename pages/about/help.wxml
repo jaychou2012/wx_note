@@ -1,0 +1,7 @@
+<view class="page">
+  <view class="page__hd" bindtap='login'>
+    <image src='../images/ic_launcher.png' class='profile'></image>
+    <view class="page__title" bindtap='preview'>{{name}}</view>
+    <text class="page__desc" decode='true'>{{label}}</text>
+  </view>
+</view>

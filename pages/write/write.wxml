@@ -1,0 +1,20 @@
+<form bindsubmit="onSubmit" bindreset="">
+  <view class="text-container">
+    <!-- <view class='title'>
+        <input name="title" placeholder-class="placeholder" placeholder="在此输入标题" value="{{note.title}}" />
+    </view> -->
+    <view class='row' id="textareawrap" catchtap="onFocus">
+      <textarea fixed="true" class='text' value="{{content}}" maxlength="5000" style="height:{{height}}" focus='{{focus}}' name="content" placeholder="点击添加日记内容..." bindinput='inputText'/>
+    </view>
+    <view>
+      <view class='setImage'>
+        <image class="picture_item " mode="aspectFill" src="{{pictures[0]}}" bindtap="previewImage"></image>
+        <image type="default" bindtap="gotoShow" src='../../res/imgs/icon_add.png' style='width:160rpx;height:160rpx'></image>
+      </view>
+    </view>
+    <view class='bottom'>
+      <button formType="submit" class='btn success'>保存</button>
+      <button class='btn del' bindtap="backPage">取消</button>
+    </view>
+  </view>
+</form>

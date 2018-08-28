@@ -1,0 +1,13 @@
+<template name="item_list_template">
+<view class="item_container">
+  <view class="adapter_item" data-objectId="{{objectId}}" data-index="{{index}}"  bindtap='toRead' bindlongpress='onMenu'>
+    <image src="https://developers.weixin.qq.com/miniprogram/dev/image/demo.jpg?t=18081011" class="item_img" mode='aspectFill'></image>    
+    <view class="item_content_container">
+        <!-- <text class="item_title">{{index}}</text> -->
+        <text class="item_title_content">{{content}}</text>
+        <text class="item_time">{{time}}</text>
+    </view>
+  </view>
+  <view class='line'></view>
+</view>
+</template>

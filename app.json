@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/write/write",
+    "pages/read/read",
+    "pages/list/list",
+    "pages/center/center",
+    "pages/lock/lock",
+    "pages/unlock/unlock",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/register/register2",
+    "pages/register/registerlogin",
+    "pages/about/about",
+    "pages/about/help",
+    "pages/about/rule"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#34495e",
+    "navigationBarTitleText": "日记",
+    "navigationBarTextStyle": "white",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#34495e",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/icon_home_normal.png",
+        "selectedIconPath": "pages/images/icon_home.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "回忆",
+        "iconPath": "pages/images/icon_list_normal.png",
+        "selectedIconPath": "pages/images/icon_list.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "我的",
+        "iconPath": "pages/images/icon_center_normal.png",
+        "selectedIconPath": "pages/images/icon_center.png"
+      }
+    ]
+  }
+}

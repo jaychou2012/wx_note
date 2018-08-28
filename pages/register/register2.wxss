@@ -1,0 +1,25 @@
+@import "../../utils/weui.wxss";
+page {
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.page__hd {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.page__bd {
+  padding-bottom: 40px;
+}
+.profile {
+  width: 80px;
+  height: 80px;
+  border: 2 solid #fff;
+  border-radius: 100rpx;
+  background-color: #fff;
+}

@@ -1,0 +1,30 @@
+<view class="page">
+  <!-- <view class="page__hd">
+    <view class="page__title">Article</view>
+    <view class="page__desc">文章</view>
+  </view> -->
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__h1" selectable="true">{{title1}}</view>
+      <view class="weui-article__section">
+        <view class="weui-article__title" selectable="true">{{title2}}</view>
+        <view class="weui-article__section">
+          <!-- <view class="weui-article__h3" selectable="true">{{title3}}</view> -->
+          <text class="weui-article__content" selectable="true">
+            {{content}}
+          </text>
+          <view class="weui-article__p">
+            <image class="weui-article__img" src="{{images}}" mode="aspectFit" style="{{styleVisible}}" bindtap='previewImage'/>
+          </view>
+        </view>
+        <!-- <view class="weui-article__section">
+          <view class="weui-article__h3">1.2 节标题</view>
+          <view class="weui-article__p">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.
+          </view>
+        </view> -->
+      </view>
+    </view>
+  </view>
+</view>

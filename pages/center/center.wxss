@@ -1,0 +1,81 @@
+@import "../../utils/weui.wxss";
+
+page {
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.page__hd {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.page__bd {
+  padding-bottom: 40px;
+}
+
+.page__bd_spacing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page__ft {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.page__title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.page__desc {
+  margin-top: 5px;
+  color: #888;
+  text-align: left;
+  font-size: 14px;
+}
+
+.profile {
+  width: 60px;
+  height: 60px;
+  border: 2 solid #fff;
+  border-radius: 100rpx;
+  background-color: #fff;
+}
+
+.button-min {
+  width: auto;
+  margin-top: 30px;
+}
+
+.feedback {
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  line-height: normal;
+}
+
+.feedback::after {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.text-content {
+  font-size: 16px;
+  color: #888;
+}
+
+.weui-cell__hd {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,36 @@
+@import "../templates/item_list.wxss";
+@import "../../utils/weui.wxss";
+.input-search {
+  margin-top: 10px;
+  border:1px solid;
+  border-radius:5px;
+  border-color: rgb(131, 116, 116);
+  padding: 5px;
+  width: 100%;
+}
+
+.btn-search {
+  height: auto;
+  margin-top: 10px;
+  border:0px solid;
+  border-radius:5px;
+  border-color: rgb(224, 217, 217);
+  padding: 2px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  width: 80px;
+}
+
+.input-container {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  padding: 10px;
+  width: 100%;
+}
