@@ -2,8 +2,6 @@
 //获取应用实例
 const app = getApp()
 var time = require('../../utils/util.js');
-var Bmob = require('../../utils/Bmob-1.6.3.min.js');
-Bmob.initialize("", "");
 
 Page({
   data: {
@@ -75,7 +73,7 @@ Page({
     }
     wx.showNavigationBarLoading();
     if (that.data.pictures[0] != '../../res/imgs/icon_img.png') {
-      var file = Bmob.File(new Date().getMilliseconds + '.jpg', that.data.pictures[0]);
+      var file = API.File(new Date().getMilliseconds + '.jpg', that.data.pictures[0]);
       file.save().then(res => {
         that.setData({
           images: res[0].url,
@@ -90,7 +88,7 @@ Page({
 
   send: function(hasImage) {
     var dateString = time.formatTimeMonth(new Date(), 'Y/M/D h:m:s');
-    const query = Bmob.Query('Riji');
+    const query = API.Query('Riji');
     query.set("zans", 0)
     query.set("name", "")
     query.set("month", dateString)

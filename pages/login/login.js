@@ -1,7 +1,5 @@
 //获取应用实例
 const app = getApp();
-var Bmob = require('../../utils/Bmob-1.6.3.min.js');
-Bmob.initialize("", "");
 
 Page({
   data: {
@@ -59,8 +57,8 @@ Page({
     wx.request({
       url: 'https://api.weixin.qq.com/sns/jscode2session',
       data: {
-        appid: 'wx432a3e20e6dfaa1a',
-        secret: '0aae010dc9923602effc420bb5814f64',
+        appid: '',
+        secret: '',
         js_code: app.globalData.code,
         grant_type: 'authorization_code',
       },
@@ -85,8 +83,8 @@ Page({
   },
 
   queryUser: function(openId) {
-    const query = Bmob.Query("_User");
-    query.equalTo("username", "==", '852041173@qq.com');
+    const query = API.Query("_User");
+    query.equalTo("username", "==", '8@qq.com');
     console.log("openId:" + openId);
     query.find().then(res => {
       console.log(res);
@@ -149,11 +147,11 @@ Page({
       })
     } else {
       // 这里修改成跳转的页面 
-      this.loginBmob();
+      this.loginAPI();
     }
   },
-  loginBmob: function() {
-    Bmob.User.login(this.data.phone, this.data.password).then(res => {
+  loginAPI: function() {
+    API.User.login(this.data.phone, this.data.password).then(res => {
       console.log(res),
         this.setData({
           user: res,

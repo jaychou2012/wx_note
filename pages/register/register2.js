@@ -1,6 +1,4 @@
 const app = getApp();
-var Bmob = require('../../utils/Bmob-1.6.3.min.js');
-Bmob.initialize("", "");
 
 Page({
   data: {
@@ -96,12 +94,12 @@ Page({
       })
     } else {
       // 这里修改成跳转的页面 
-      this.loginBmob();
+      this.loginAPI();
     }
   },
 
-  loginBmob: function() {
-    const query = Bmob.Query("_User");
+  loginAPI: function() {
+    const query = API.Query("_User");
     query.equalTo("username", "==", this.data.phone);
     query.find().then(res => {
       if (res.length == 0) {
@@ -160,14 +158,14 @@ Page({
       return;
     }
     if (that.data.currentImg.length > 0) {
-      var file = Bmob.File(new Date().getMilliseconds() + '.jpg', that.data.currentImg);
+      var file = API.File(new Date().getMilliseconds() + '.jpg', that.data.currentImg);
       file.save().then(res => {
         console.log('图片错误')
         console.log(res)
         that.setData({
           currentImg: res[0].url,
         })
-        this.registerBmob();
+        this.registerAPI();
       })
     }
   },
@@ -178,7 +176,7 @@ Page({
     })
   },
 
-  registerBmob: function(e) {
+  registerAPI: function(e) {
     let params = {
       username: this.data.phone,
       nick: this.data.nick,
@@ -194,7 +192,7 @@ Page({
       birthday: this.data.date,
       flower: 0,
     }
-    Bmob.User.register(params).then(res => {
+    API.User.register(params).then(res => {
       console.log(res)
       wx.showToast({
         title: '注册成功~',

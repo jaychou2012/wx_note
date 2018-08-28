@@ -20,8 +20,8 @@ Page({
     })
   },
 
-  loginBmob: function() {
-    app.globalData.Bmob.User.login('852041173@qq.com', '123456').then(res => {
+  loginAPI: function() {
+    app.globalData.API.User.login('8@qq.com', '123').then(res => {
       console.log(res),
         this.setData({
           user: res,
@@ -34,7 +34,7 @@ Page({
 
   getList: function(refresh) {
     var that = this;
-    const query = app.globalData.Bmob.Query("Riji");
+    const query = app.globalData.API.Query("Riji");
     query.equalTo("id", "==", app.globalData.userId);
     query.equalTo("open", "!=", true);
     query.equalTo("visible", "==", true);
@@ -135,7 +135,7 @@ Page({
             })
             break;
           case 1:
-            const query = app.globalData.Bmob.Query('Riji');
+            const query = app.globalData.API.Query('Riji');
             query.destroy(e.currentTarget.dataset.objectid).then(res => {
               console.log(res)
               wx.showToast({

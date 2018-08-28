@@ -1,8 +1,6 @@
 //index.js
 //获取应用实例
 const app = getApp()
-var Bmob = require('../../utils/Bmob-1.6.3.min.js');
-Bmob.initialize("", "");
 
 Page({
   data: {
@@ -29,7 +27,7 @@ Page({
   onShow: function() {
     wx.showNavigationBarLoading();
     var that = this;
-    const query = Bmob.Query('Riji');
+    const query = API.Query('Riji');
     query.get(this.data.objectId).then(res => {
       console.log(res)
       wx.hideNavigationBarLoading()

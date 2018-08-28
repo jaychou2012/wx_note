@@ -1,6 +1,4 @@
 const app = getApp();
-var Bmob = require('../../utils/Bmob-1.6.3.min.js');
-Bmob.initialize("", "");
 
 Page({
   data: {
@@ -42,11 +40,11 @@ Page({
       })
     } else {
       // 这里修改成跳转的页面 
-      this.loginBmob();
+      this.loginAPI();
     }
   },
-  loginBmob: function() {
-    const query = Bmob.Query("_User");
+  loginAPI: function() {
+    const query = API.Query("_User");
     query.equalTo("username", "==", this.data.phone);
     query.find().then(res => {
       if (res.length == 0) {

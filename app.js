@@ -1,6 +1,4 @@
 //app.js
-var Bmob = require('utils/Bmob-1.6.3.min.js');
-Bmob.initialize("", "");
 
 App({
 
@@ -48,7 +46,6 @@ App({
     refreshIndex: true,
     lock: false,
     lockCount: 0,
-    Bmob: Bmob,
     windowHeight: 0,
     user: {},
   }

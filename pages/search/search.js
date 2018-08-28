@@ -34,7 +34,7 @@ Page({
 
   getList: function(refresh) {
     var that = this;
-    const query = app.globalData.Bmob.Query("Riji");
+    const query = app.globalData.API.Query("Riji");
     query.equalTo("id", "==", app.globalData.userId);
     query.equalTo("open", "!=", true);
     query.equalTo("visible", "==", true);
