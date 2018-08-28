@@ -6,7 +6,7 @@
 开源share给大家。
 
 
-
+<img src="https://github.com/jaychou2012/wx_note/blob/master/images/Screenshot_20180828-192157.png" width="52%" height="52%"/>
 
 
 
